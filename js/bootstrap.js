@@ -9,7 +9,7 @@
 
     //https://github.com/cferdinandi/smooth-scroll
     const scroll = new SmoothScroll('a[href*="#"]', {
-      offset: 10,
+      offset: 60,
       selectorHeader: '.navbar'
     })
   })

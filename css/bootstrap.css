@@ -32,8 +32,8 @@
   --max-width: 1200px;
   --header-height: 5rem;
 
-  --logo-width: 4rem;
-  --logo-height: 4rem;
+  --logo-width: 6rem;
+  --logo-height: 6rem;
   --logo-spacing: .5rem;
 
   --nav-height: 64px;
@@ -81,7 +81,7 @@ h3 { font-size: 2.5rem; }
 .navbar-brand img {
   width: auto;
   height: var(--logo-height);
-  padding: var(--logo-spacing);
+  /*padding: var(--logo-spacing);*/
 }
 
 .navbar-toggler {
