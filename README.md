@@ -7,5 +7,5 @@
 const js = ['vue', 'jquery'];
 const css = ['bootstrap'];
 ```
-**Tiempo de construcción**
+### Tiempo de construcción
  > 30 horas
