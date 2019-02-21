@@ -25,70 +25,77 @@ const app = new Vue({
         productos: [
           {
             id: 1,
-            src: './img/puerta-1.jpg',
+            src: './img/puerta.png',
             titulo: 'Puerta con buñas',
+            alt: 'Puerta',
             medidas: ['medida 1','medida 2','medida 3','medida 4'],
             especies: ['especie 1','especie 2','especie 3','especie 4'],
-            descripcion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat iste neque quos harum illum, necessitatibus unde non voluptates voluptatibus voluptate, fugiat sint sapiente, autem corporis expedita. Vitae delectus, nihil error.'
+            descripcion: '¿Necesitas un toque de estilo y fuerza?',
           },
           {
             id: 2,
             src: './img/terciadas.jpeg',
             titulo: 'Multilaminado',
+            alt: 'Terciadas',
             medidas: ['medida 1','medida 2','medida 3','medida 4'],
             especies: ['especie 1','especie 2','especie 3','especie 4'],
-            descripcion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae atque ea vel consectetur, nemo nam quasi et molestiae totam architecto obcaecati quae fuga alias blanditiis, aut voluptatum illum explicabo exercitationem!'
+            descripcion: 'Podés usarlo para reforzar techos, montar paredes falsas.',
           },
           {
             id: 3,
             src: './img/marco.png',
             titulo: 'Marco',
+            alt: 'Marco',
             medidas: ['medida 1','medida 2','medida 3','medida 4'],
             especies: ['especie 1','especie 2','especie 3','especie 4'],
-            descripcion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum. Cumque beatae dignissimos eligendi fugit, accusamus accusantium odio quia eius ullam repellendus, quo impedit mollitia. Laboriosam facere quisquam rem illum.'
+            descripcion: 'De Yvyrapyta | Guayaibi',
           },
           {
             id: 4,
             src: './img/caseta.png',
             titulo: 'Caseta de Jardin',
+            alt: 'Caseta',
             medidas: ['medida 1','medida 2','medida 3','medida 4'],
             especies: ['especie 1','especie 2','especie 3','especie 4'],
-            descripcion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia veniam provident expedita aliquid minima cum quidem fuga enim quasi, earum, soluta, consequuntur dolor eligendi dolorem obcaecati nulla! Qui, pariatur.'
+            descripcion: '¿Muchas herramientas y poco espacio?',
           },
           {
             id: 5,
             src: './img/contramarco.png',
             titulo: 'contramarco',
+            alt: 'Contramarco',
             medidas: ['medida 1','medida 2','medida 3','medida 4'],
             especies: ['especie 1','especie 2','especie 3','especie 4'],
-            descripcion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione similique nesciunt esse illo, inventore amet, officiis maxime qui iure quae accusamus earum neque, deleniti numquam expedita vel! Assumenda neque, nemo?'
+            descripcion: 'Comeplemetan tu marco, con nuestra linea de contramarcos.',
           },
           {
             id: 6,
             src: './img/machimbre.png',
             titulo: 'Machimbre',
+            alt: 'Machimbre',
             medidas: ['medida 1','medida 2','medida 3','medida 4'],
             especies: ['especie 1','especie 2','especie 3','especie 4'],
-            descripcion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis aliquid perspiciatis nisi. Similique ab nam facere eaque, nemo, quisquam rerum, necessitatibus consequuntur assumenda vel eveniet molestias, sint illo commodi.'
+            descripcion: 'Para techo y tambien para pisos',
           },
           {
             id: 7,
             src: './img/clavos.png',
             titulo: 'Ferreteria',
+            alt: 'Ferreteria',
             medidas: ['medida 1','medida 2','medida 3','medida 4'],
             especies: ['especie 1','especie 2','especie 3','especie 4'],
-            descripcion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis id voluptas maiores nam, reprehenderit quod hic, in, totam esse pariatur provident quasi quae tempore. Maiores, cupiditate, eius. Iste, nobis quo!'
+            descripcion: 'Todo lo que necesitas para el trabajo con madera',
           },
           {
             id: 8,
             src: './img/encofradoh.png',
             titulo: 'Encofrado',
+            alt: 'Encofrado',
             medidas: ['medida 1','medida 2','medida 3','medida 4'],
             especies: ['especie 1','especie 2','especie 3','especie 4'],
-            descripcion: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam beatae qui! Iusto modi dolores quidem fugit nam, delectus quisquam beatae esse nobis incidunt. Eos quibusdam sit aperiam commodi, tempore.'
+            descripcion: 'Apoyamos tu emprendimiento desde el inicio.',
           }
-          ]
-
+        ]
     },
     methods: {
       setProduct: function(idProd){this.isShow=false;this.prod = this.productos.filter(e => e.id === idProd)},
