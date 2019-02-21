@@ -79,110 +79,21 @@
           </p>
         </article>
         <article class="row">
-          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+
+          <div class="col-12 col-sm-6 col-lg-3 d-flex" v-for="p in productos">
             <article class="card mb-3">
-              <img class="card-img-top" src="./img/puerta.png" alt="Puerta">
+              <img class="card-img-top" :src="p.src" :alt="p.alt">
               <div class="card-body">
-                <h5 class="card-title">Puerta de Cedro con buñas</h5>
-                <p class="card-text">¿Necesitas un toque de estilo y fuerza?</p>
-                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(1)" class="card-link">
+                <h5 class="card-title">{{p.titulo}}</h5>
+                <p class="card-text">{{p.descripcion}}</p>
+                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(p.id)" class="card-link">
                   Más detalles
                   <i class="fas fa-chevron-right"></i>
                 </a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex">
-            <article class="card mb-3">
-              <img class="card-img-top" src="./img/terciadas.png" alt="Terciadas">
-              <div class="card-body">
-                <h5 class="card-title">Multilaminado</h5>
-                <p class="card-text">Podés usarlo para reforzar techos, montar paredes falsas.</p>
-                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(2)" class="card-link">
-                  Más detalles
-                  <i class="fas fa-chevron-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex">
-            <article class="card mb-3">
-              <img class="card-img-top" src="./img/marco.png" alt="Marco">
-              <div class="card-body">
-                <h5 class="card-title">Marco</h5>
-                <p class="card-text">De Yvyrapyta | Guayaibi.</p>
-                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(3)" class="card-link">
-                  Más detalles
-                  <i class="fas fa-chevron-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex">
-            <article class="card mb-3">
-              <img class="card-img-top" src="./img/caseta.png" alt="Caseta">
-              <div class="card-body">
-                <h5 class="card-title">Caseta de Jardín</h5>
-                <p class="card-text">¿Muchas herramientas, y poco espacio?</p>
-                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(4)" class="card-link">
-                  Más detalles
-                  <i class="fas fa-chevron-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex">
-            <article class="card mb-3">
-              <img class="card-img-top" src="./img/contramarco.png" alt="Contramarco">
-              <div class="card-body">
-                <h5 class="card-title">Contramarco</h5>
-                <p class="card-text">Complementa tu marco, con nuestra línea de contramarcos</p>
-                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(5)" class="card-link">
-                  Más detalles
-                  <i class="fas fa-chevron-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex">
-            <article class="card mb-3">
-              <img class="card-img-top" src="./img/machimbre.png" alt="Machimbre">
-              <div class="card-body">
-                <h5 class="card-title">Machimbre</h5>
-                <p class="card-text">Para techo y también para pisos!</p>
-                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(6)" class="card-link">
-                  Más detalles
-                  <i class="fas fa-chevron-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex">
-            <article class="card mb-3">
-              <img class="card-img-top" src="./img/clavos.png" alt="Ferreteria">
-              <div class="card-body">
-                <h5 class="card-title">Ferretería de Carpintería</h5>
-                <p class="card-text">Todo lo que necesites para el trabajo en madera</p>
-                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(7)" class="card-link">
-                  Más detalles
-                  <i class="fas fa-chevron-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex">
-            <article class="card mb-3">
-              <img class="card-img-top" src="./img/encofradoh.png" alt="Encofrado">
-              <div class="card-body">
-                <h5 class="card-title">Encofrados</h5>
-                <p class="card-text">Apoyamos tu emprendimiento desde el inicio</p>
-                <a href="#w" data-toggle="modal" data-target="#exampleModalLong" @click="setProduct(8)" class="card-link">
-                  Más detalles
-                  <i class="fas fa-chevron-right"></i>
-                </a>
-              </div>
-            </article>
-          </div>
+
         </article>
       </div>
     </section>
