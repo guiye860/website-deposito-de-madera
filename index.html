@@ -109,66 +109,18 @@
           </p>
         </article>
         <aside class="WorkFlow-steps">
-          <div class="row justify-content-lg-center align-items-lg-center">
-            <div class="col-12 col-lg-6 text-right">
-              <h3>Carpintería</h3>
-              <h4>Muebles y piezas en general</h4>
-              <p>
-                Necesitas una puerta (como la que tenemos en nuestro catálogo) y buscas alguna personalización extra, o por que no, algún mobiliario, no te preocupes que contamos con el talento y toda la maquinaria para cubrir esa necesidad.
-              </p>
+
+          <div class="row justify-content-lg-center align-items-lg-center" v-for="s in servicios">
+            <div :class="s.clase">
+              <h3 v-text="s.titulo"></h3>
+              <h4 v-text="s.subTitulo"></h4>
+              <p v-text="s.texto"></p>
             </div>
             <div class="col-12 col-lg-6">
-              <img class="img-fluid img-fluid shadow mb-5 bg-white rounded" src="./img/carpinteria.png" alt="Carpintería">
+              <img :class="s.imgClass" :src="s.img" alt="Carpintería">
             </div>
           </div>
-          <div class="row justify-content-lg-center align-items-lg-center">
-            <div class="col-12 col-lg-6 order-lg-1">
-              <h3>Colocación de Aberturas</h3>
-              <h4>Marcos y puertas</h4>
-              <p>
-                Alguna puerta o ventana que necesites montar, contamos con mano de obra calificada para éste trabajo.
-              </p>
-            </div>
-            <div class="col-12 col-lg-6">
-              <img class="img-fluid" src="./img/aberturas.jpg" alt="Aberturas">
-            </div>
-          </div>
-          <div class="row justify-content-lg-center align-items-lg-center">
-            <div class="col-12 col-lg-6 text-right">
-              <h3>Lustre</h3>
-              <h4>Brillo y durabilidad</h4>
-              <p>
-                Sellamos, protegemos y le damos brillo a tus muebles, ésto ayuda a extender el ciclo de vida del producto.
-              </p>
-            </div>
-            <div class="col-12 col-lg-6">
-              <img class="img-fluid" src="./img/cepillado.jpeg" alt="Lustre-Cepillado">
-            </div>
-          </div>
-          <div class="row justify-content-lg-center align-items-lg-center">
-            <div class="col-12 col-lg-6 order-lg-1">
-              <h3>Cepillado</h3>
-              <h4>Limando asperezas</h4>
-              <p>
-                Es similar a lijar una superficie pero con una maquinaria mas sofisticada y precisa, removemos todas esas imperfecciones de la madera y ésta queda lista para sellarla.
-              </p>
-            </div>
-            <div class="col-12 col-lg-6">
-              <img class="img-fluid" src="./img/lustre-cepillado.jpg" alt="Cepillado">
-            </div>
-          </div>
-          <div class="row justify-content-lg-center align-items-lg-center">
-            <div class="col-12 col-lg-6 text-right">
-              <h3>Colocación de contramarco</h3>
-              <h4>colocacion texto resumido</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium, commodi! Natus expedita culpa ab quam, minus, iste perferendis est tempora laboriosam architecto sit non reprehenderit assumenda, veniam minima voluptatum?
-              </p>
-            </div>
-            <div class="col-12 col-lg-6">
-              <img class="img-fluid" src="./img/contramarco-colocacion.jpg" alt="Colocacion de contramarcos">
-            </div>
-          </div>
+
         </aside>
       </div>
     </section>
@@ -215,7 +167,7 @@
               <h3 class="mb-5">¿Interesado?</h3>
               <button class="mb-5 btn btn-primary" @click="setModalShow" data-toggle="modal" data-target="#exampleModalLong">¡Necesito un presupuesto!</button>
               <p class="u-flowText">
-                Para más información, nos podes contactar enviando un correo a <a href="mailto:info@maderasanfrancisco.com">info@maderasanfrancisco.com</a>.
+                Para más información, nos podes contactar al <strong>021- 31 2012</strong> o enviando un correo a <a href="mailto:info@maderasanfrancisco.com">info@maderasanfrancisco.com</a>.
               </p>
             </div>
           </article>
