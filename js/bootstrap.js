@@ -95,7 +95,52 @@ const app = new Vue({
             especies: ['especie 1','especie 2','especie 3','especie 4'],
             descripcion: 'Apoyamos tu emprendimiento desde el inicio.',
           }
-        ]
+        ],
+        servicios: [{
+          id: 1,
+          titulo: 'Carpintería',
+          subTitulo: 'Muebles y piezas en general',
+          texto: 'Necesitas una puerta (como la que tenemos en nuestro catálogo) y buscas alguna personalización extra, o por que no, algún mobiliario, no te preocupes que contamos con el talento y toda la maquinaria para cubrir esa necesidad.',
+          clase: 'col-12 col-lg-6 text-right',
+          img: './img/carpinteria.png',
+          imgClass: 'img-fluid shadow mb-5 bg-white rounded'
+        },
+        {
+          id: 2,
+          titulo: 'Colocación de Aberturas',
+          subTitulo: 'Marcos y puertas',
+          texto: 'Alguna puerta o ventana que necesites montar, contamos con mano de obra calificada para éste trabajo.',
+          clase: 'col-12 col-lg-6 order-lg-1',
+          img: './img/aberturas.jpg',
+          imgClass: 'img-fluid shadow mb-5 bg-white rounded'
+        },
+        {
+          id: 3,
+          titulo: 'Lustre',
+          subTitulo: 'Brillo y durabilidad',
+          texto: 'Sellamos, protegemos y le damos brillo a tus muebles, ésto ayuda a extender el ciclo de vida del producto.',
+          clase: 'col-12 col-lg-6 text-right',
+          img: './img/cepillado.jpeg',
+          imgClass: 'img-fluid shadow mb-5 bg-white rounded'
+        },
+        {
+          id: 4,
+          titulo: 'Cepillado',
+          subTitulo: 'Limando asperezas',
+          texto: 'Es similar a lijar una superficie pero con una maquinaria mas sofisticada y precisa, removemos todas esas imperfecciones de la madera y ésta queda lista para sellarla.',
+          clase: 'col-12 col-lg-6 order-lg-1',
+          img: './img/lustre-cepillado.jpg',
+          imgClass: 'img-fluid shadow mb-5 bg-white rounded'
+        },
+        {
+          id: 5,
+          titulo: 'Colocacion de contramarco',
+          subTitulo: 'Marco y contramarco siempre vienen de la mano',
+          texto: 'Para una terminacion elegante, es infaltable un buen marco.',
+          clase: 'col-12 col-lg-6 text-right',
+          img: './img/contramarco-colocacion.jpg',
+          imgClass: 'img-fluid shadow mb-5 bg-white rounded'
+        }]
     },
     methods: {
       setProduct: function(idProd){this.isShow=false;this.prod = this.productos.filter(e => e.id === idProd)},
