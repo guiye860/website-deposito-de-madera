@@ -184,6 +184,10 @@ a.bg-success:hover {
   font-weight: bold;
 }
 
+.list-group-item {
+  background-color: inherit;
+}
+
 /* ********** My Styles ********** */
 .HeroImage {
   min-height: calc(100vh + var(--logo-height));
